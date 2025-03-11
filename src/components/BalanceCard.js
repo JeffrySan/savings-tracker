@@ -1,16 +1,7 @@
 // BalanceCard.js
-import React, { useEffect, useState } from "react";
-import { getSavingsBalance } from "../services/userService";
+import React from "react";
 
-function BalanceCard() {
-  const [balance, setBalance] = useState(0);
-
-  useEffect(() => {
-    getSavingsBalance().then((responseBalance) => {
-      setBalance(responseBalance);
-    });
-  });
-
+function BalanceCard({balance}) {
   return (
     <div className="balance-card">
       <p className="balance-label">Overall Balance</p>
