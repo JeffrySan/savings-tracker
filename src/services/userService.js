@@ -3,7 +3,7 @@
 
 // Financial data
 const financialData = {
-  balance: 345234,
+  balance: 34523430,
   income: 5120,
   expense: 1577.35,
 };
