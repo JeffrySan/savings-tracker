@@ -2,16 +2,15 @@ import React from 'react';
 import './App.css';
 
 // Import components
-import Header from './component/Header';
-import BalanceCard from './component/BalanceCard';
-import SummaryCards from './component/SummaryCards';
-import TransactionsCard from './component/TransactionsCard';
-import UserContributionsCard from './component/UserContributionsCard';
-import BottomNavigationBar from './component/BottomNavigationBar';
+import Header from './components/Header';
+import BalanceCard from './components/BalanceCard';
+import SummaryCards from './components/SummaryCards';
+import TransactionsCard from './components/TransactionsCard';
+import UserContributionsCard from './components/UserContributionsCard';
+import BottomNavigationBar from './components/BottomNavigationBar';
 
 const App = () => {
   // Sample data for the dashboard
-  const balance = 3542.65;
   const income = 5120;
   const expense = 1577.35;
   
@@ -34,7 +33,7 @@ const App = () => {
   return (
     <div className="app-container">
       <Header />
-      <BalanceCard balance={balance} />
+      <BalanceCard/>
       <SummaryCards income={income} expense={expense} />
       <TransactionsCard transactions={recentTransactions} />
       <UserContributionsCard 
